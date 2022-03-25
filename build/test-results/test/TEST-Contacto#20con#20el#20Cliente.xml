@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Contacto con el Cliente" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-03-25T21:45:22" hostname="DESKTOP-LIG7IFI" time="97.999">
+  <properties/>
+  <testcase name="Como cliente proporciono la informacion necesaria para que me puedan responder" classname="Contacto con el Cliente" time="68.38"/>
+  <testcase name="Como cliente proporciono datos de contacto sin la informacion de correo electronico" classname="Contacto con el Cliente" time="29.619"/>
+  <system-out><![CDATA[2022-03-25 16:46:03 INFO  ContactUsTestStepDefinition:35 LOGGER WORKING
+2022-03-25 16:46:45 INFO  ContactUsTestStepDefinition:35 LOGGER WORKING
+]]></system-out>
+  <system-err><![CDATA[1531 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/sofka/intellij/SerenityBDD/Web/SerenityBddWebUiTest/src/test/resources/features/automationpractice/contact_us.feature
+1531 [Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/sofka/intellij/SerenityBDD/Web/SerenityBddWebUiTest/src/test/resources/features/automationpractice/contact_us.feature is not under the 'features' directory. Requirements report will not be correctly generated!
+1689 [Test worker] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+Como cliente proporciono la informacion necesaria para que me puedan responder(contacto-con-el-cliente;como-cliente-proporciono-la-informacion-necesaria-para-que-me-puedan-responder)
+-------------------------------------------------------------------
+mar 25, 2022 4:45:23 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+6420 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+6436 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: [], prefs: {download.default_directory: C:\sofka\intellij\SerenityB...}}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 23566
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mar 25, 2022 4:45:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+69777 [Test worker] INFO  - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+Como cliente proporciono la informacion necesaria para que me puedan responder
+----------------------------------------------------------------------------
+69777 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/sofka/intellij/SerenityBDD/Web/SerenityBddWebUiTest/src/test/resources/features/automationpractice/contact_us.feature
+69777 [Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/sofka/intellij/SerenityBDD/Web/SerenityBddWebUiTest/src/test/resources/features/automationpractice/contact_us.feature is not under the 'features' directory. Requirements report will not be correctly generated!
+69777 [Test worker] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+Como cliente proporciono datos de contacto sin la informacion de correo electronico(contacto-con-el-cliente;como-cliente-proporciono-datos-de-contacto-sin-la-informacion-de-correo-electronico)
+-------------------------------------------------------------------
+mar 25, 2022 4:46:30 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+70317 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+70317 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: [], prefs: {download.default_directory: C:\sofka\intellij\SerenityB...}}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 23129
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mar 25, 2022 4:46:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+99396 [Test worker] INFO  - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+Como cliente proporciono datos de contacto sin la informacion de correo electronico
+----------------------------------------------------------------------------
+]]></system-err>
+</testsuite>
