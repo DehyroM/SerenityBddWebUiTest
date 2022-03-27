@@ -5,10 +5,12 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.*;
 import net.serenitybdd.screenplay.conditions.Check;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static co.com.sofka.ui.automationpractice.AutomationPractice.*;
 import static co.com.sofka.util.Title.MR;
 import static co.com.sofka.util.Title.MRS;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class FillCreateAnAccount implements Task {
 
@@ -125,6 +127,8 @@ public class FillCreateAnAccount implements Task {
     public <T extends Actor> void performAs(T actor) {
 
         actor.attemptsTo(
+
+                WaitUntil.the(TITLE, isVisible()).forNoMoreThan(10).seconds(),
                 Check.whether(MR.equals(title))
                         .andIfSo(
                                 Scroll.to(MR_OPTION),

@@ -11,17 +11,19 @@ public class CommonStepDefinition extends Setup {
 
     private static final Logger LOGGER = Logger.getLogger(CommonStepDefinition.class);
     private static final String ACTOR_NAME = "Cliente";
-    private static final String MESSAGE = "LOGGER WORKING";
+    private static final String LANDING_PAGE_ERROR = "UNABLE TO OPEN LANDING PAGE";
 
     @Given("el cliente se encuentra en el Home del sitio Web de Automation Practice")
     public void elClienteSeEncuentraEnElHomeDelSitioWebDeAutomationPractice() {
 
-        actorSetupTheBrowser(ACTOR_NAME);
-        theActorInTheSpotlight().wasAbleTo(
-                openLandingPage()
-        );
-        LOGGER.info(MESSAGE);
-
+        try{
+            actorSetupTheBrowser(ACTOR_NAME);
+            theActorInTheSpotlight().wasAbleTo(
+                    openLandingPage()
+            );
+        }catch (Exception e){
+            LOGGER.error(e.getMessage(), e);
+            LOGGER.warn(LANDING_PAGE_ERROR);
+        }
     }
-
 }

@@ -1,15 +1,15 @@
-package co.com.sofka.question.createaccount;
+package co.com.sofka.question.signinaccount;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
 import static co.com.sofka.ui.automationpractice.AutomationPractice.REGISTER_LOGIN_VALIDATION;
 
-public class SuccessfulRegistration implements Question<Boolean> {
+public class SuccessfulSignIn implements Question<Boolean> {
 
     private String validationMessage;
 
-    public SuccessfulRegistration wasValidatedWithSuccessfulMessage(String validationMessage) {
+    public SuccessfulSignIn wasValidatedWithSuccessfulMessage(String validationMessage) {
         this.validationMessage = validationMessage;
         return this;
     }
@@ -19,11 +19,11 @@ public class SuccessfulRegistration implements Question<Boolean> {
         return REGISTER_LOGIN_VALIDATION.resolveFor(actor).containsOnlyText(validationMessage);
     }
 
-    public SuccessfulRegistration is(){
+    public SuccessfulSignIn is(){
         return this;
     }
 
-    public static SuccessfulRegistration createAccount(){
-        return new SuccessfulRegistration();
+    public static SuccessfulSignIn signInAccount(){
+        return new SuccessfulSignIn();
     }
 }

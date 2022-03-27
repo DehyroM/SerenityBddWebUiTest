@@ -56,7 +56,6 @@ public class FillContactUs implements Task {
                 Click.on(SEND_CONTACT_US)
 
         );
-
     }
 
     public static FillContactUs fillContactUs(){

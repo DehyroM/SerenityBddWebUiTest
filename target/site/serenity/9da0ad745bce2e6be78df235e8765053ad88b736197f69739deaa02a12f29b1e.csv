@@ -1,5 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Contacto con el Cliente","Como cliente proporciono la informacion necesaria para que me puedan responder","SUCCESS","2022-03-26T16:16:31.453-05:00[America/Bogota]","0.0","130.08"
-"Contacto con el Cliente","Como cliente proporciono datos de contacto sin la informacion de correo electronico","SUCCESS","2022-03-26T16:18:45.436-05:00[America/Bogota]","0.0","188.75"
-"Crear una cuenta","Como cliente proporciono la informacion necesaria para poder crear una cuenta","SUCCESS","2022-03-26T16:26:24.749-05:00[America/Bogota]","0.0","89.82"
-"Crear una cuenta","Como cliente proporciono datos de contacto sin llenar el campo password","SUCCESS","2022-03-26T16:27:58.965-05:00[America/Bogota]","0.0","65.81"

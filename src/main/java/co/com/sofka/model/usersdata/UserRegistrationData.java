@@ -35,15 +35,15 @@ public class UserRegistrationData {
 
         faker = new Faker();
         firstName = faker.name().firstName();
-        titleNumber = faker.number().numberBetween(0,1);
+        titleNumber = faker.number().numberBetween(0,2);
         title = theTitle(titleNumber);
         lastName = faker.name().lastName();
         emailRegister = firstName+"_"+lastName+"@gmail.com";
         zipCode = String.valueOf(faker.number().numberBetween(10000,99999));
         passwordRegister = firstName+"."+zipCode;
-        day = String.valueOf(faker.number().numberBetween(1,28));
-        month = String.valueOf(faker.number().numberBetween(1,12));
-        year = String.valueOf(faker.number().numberBetween(1900,2021));
+        day = String.valueOf(faker.number().numberBetween(1,29));
+        month = String.valueOf(faker.number().numberBetween(1,13));
+        year = String.valueOf(faker.number().numberBetween(1900,2022));
         company = faker.company().name();
         address = faker.address().streetAddress();
         secondaryAddress = faker.address().secondaryAddress();

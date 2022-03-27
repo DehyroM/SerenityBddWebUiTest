@@ -5,5 +5,3 @@ j
 :src/main/java/co/com/sofka/ui/landingpage/LandingPage.java,8\a\8a004c35004c9ef3c59d1a1fa44b2005361403e8
 p
 @src/main/java/co/com/sofka/task/landingpage/OpenLandingPage.java,2\6\263201e4f699f78ac3a0d5275436d7a9cec7386a
-w
-Gsrc/main/java/co/com/sofka/model/automationpractice/ContactUsModel.java,d\1\d1cc2ce33711a4e6fa566918b8c17e095d387690

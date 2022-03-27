@@ -5,9 +5,9 @@ public enum OptionKeys {
     WEBMASTER("Webmaster"),
     SUCCESSFUL_CONTACT_US("Your message has been successfully sent to our team."),
     FAIL_CONTACT_US("Invalid email address."),
-    SUCCESSFUL_REGISTER("MY ACCOUNT"),
-    //Welcome to your account. Here you can manage all of your personal information and orders.
-    FAIL_PASS_REGISTER("passwd is required.");
+    SUCCESSFUL_REGISTER_LOGIN("MY ACCOUNT"),
+    FAIL_PASS_REGISTER("passwd is required."),
+    FAIL_EMAIL_LOGIN("An email address required.");
 
     private final String value;
 

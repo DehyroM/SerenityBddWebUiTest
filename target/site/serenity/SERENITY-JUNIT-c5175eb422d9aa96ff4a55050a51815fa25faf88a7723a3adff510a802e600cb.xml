@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Crear una cuenta" skipped="0" tests="2" time="155.62" timestamp="2022-03-26 04:26:24"><testcase name="Como cliente proporciono la informacion necesaria para poder crear una cuenta"/><testcase name="Como cliente proporciono datos de contacto sin llenar el campo password"/></testsuite>

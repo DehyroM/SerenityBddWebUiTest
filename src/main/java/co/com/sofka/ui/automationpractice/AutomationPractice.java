@@ -51,6 +51,10 @@ public class AutomationPractice extends PageObject {
             .the("Create an account button")
             .located(xpath("//*[@id=\"SubmitCreate\"]"));
 
+    public static final Target TITLE = Target
+            .the("Title")
+            .located(xpath("//*[@id=\"account-creation_form\"]/div[1]/div[1]/label"));
+
     public static final Target MR_OPTION = Target
             .the("Mr. Option")
             .located(xpath("//*[@id=\"account-creation_form\"]/div[1]/div[1]/div[1]/label"));
@@ -141,7 +145,17 @@ public class AutomationPractice extends PageObject {
             .the("Sign Out")
             .located(xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[2]/a"));
 
+    public static final Target EMAIL_LOGIN = Target
+            .the("Email Login")
+            .located(xpath("//*[@id=\"email\"]"));
 
+    public static final Target PASS_LOGIN = Target
+            .the("Password Login")
+            .located(xpath("//*[@id=\"passwd\"]"));
+
+    public static final Target SIGN_IN_BTN = Target
+            .the("Sign In Button")
+            .located(xpath("//*[@id=\"SubmitLogin\"]"));
 
     // For validations in "Contact Us"
 
@@ -153,19 +167,18 @@ public class AutomationPractice extends PageObject {
             .the("Invalid email address")
             .located(xpath("//*[@id=\"center_column\"]/div/ol/li"));
 
-    // For validations in "Create an Account"
+    // For validations in "Create an Account" and "Log in"
 
-    public static final Target REGISTER_VALIDATION = Target
+    public static final Target REGISTER_LOGIN_VALIDATION = Target
             .the("Welcome message")
-            .located(xpath("//*[@id=\"center_column\"]/h1")); //*[@id="center_column"]/h1
-    //*[@id="center_column"]/p/text()
+            .located(xpath("//*[@id=\"center_column\"]/h1"));
 
     public static final Target NOT_PASS_IN_REGISTER= Target
             .the("Password is required")
             .located(xpath("//*[@id=\"center_column\"]/div/ol/li"));
 
-    // For validations in "Log in"
-
-
+    public static final Target NOT_EMAIL_IN_LOGIN = Target
+            .the("Email is required")
+            .located(xpath("//*[@id=\"center_column\"]/div[1]/ol/li"));
 
 }
