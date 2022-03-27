@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="09ee944caf7fb6b28cb397bad1194ce03aa72a208b6e21f086d8ad446524d6bf.html">Loguearse En Una Cuenta</a></span>
+                > <span class="truncate-60"><a
+                    href="ac371463a24fa70892577f27d32294bb0d3becf08592fd29664bdbb59b9541ea.html">Como cliente proporciono la informacion necesaria para poder ingresar a mi cuenta </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 26-03-2022 23:33</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Loguearse En Una Cuenta </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Yo como usuario registrado en la página web Automation Practice<br />
+Quiero poder acceder a mi cuenta<br />
+Para interactuar con los servicios ofrecidos en la página web
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Como cliente proporciono la informacion necesaria para poder ingresar a mi cuenta
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="a8fd6ded05954b9049ffbb7e32249db53abf191e7939710e56449b06d210a1d6.png" title=" Given el cliente se encuentra en el Home del sitio Web de Automation Practice" width="1366"/>
+                <img src="a8fd6ded05954b9049ffbb7e32249db53abf191e7939710e56449b06d210a1d6.png" title=" Cliente open landing page" width="1366"/>
+                <img src="a8fd6ded05954b9049ffbb7e32249db53abf191e7939710e56449b06d210a1d6.png" title=" Cliente opens the Landing page" width="1366"/>
+                <img src="671f781f8dbf8e9d3f87800f4d7ae4ccacecc6d962f72ca4c543240abfa690d7.png" title=" Cliente opens the Landing page (completed)" width="1366"/>
+                <img src="671f781f8dbf8e9d3f87800f4d7ae4ccacecc6d962f72ca4c543240abfa690d7.png" title=" Cliente open landing page (completed)" width="1366"/>
+                <img src="671f781f8dbf8e9d3f87800f4d7ae4ccacecc6d962f72ca4c543240abfa690d7.png" title=" Given el cliente se encuentra en el Home del sitio Web de Automation Practice (completed)" width="1366"/>
+                <img src="6a97fdcbff27ba5abab9d05918b3d3b6527ff88f6ed1068cdf005d894b647d69.png" title=" When el cliente entra en la seccion Sign in del sitio Web" width="1366"/>
+                <img src="6a97fdcbff27ba5abab9d05918b3d3b6527ff88f6ed1068cdf005d894b647d69.png" title=" Cliente browse to create an account" width="1366"/>
+                <img src="cf49e1fb6a8f2128417a93c3bd85bb044c332862bfc1487b2bd89d21335a9786.png" title=" Cliente clicks on Sign in" width="1366"/>
+                <img src="2ee35a502f40b698fe08608284daf22377ef606d986022869e05aee3bde1136f.png" title=" Cliente clicks on Sign in (completed)" width="1366"/>
+                <img src="cd38683103fe725e6dbac3acd1684006acaf8b4cb7174861f299e53005611209.png" title=" Cliente enters 'Yang_Haley@gmail.com' into Email Address for Register" width="1366"/>
+                <img src="8f80ea484ca9b5f4216292da49f0f751ded2d9de06a732f0ba63dfaae097e01e.png" title=" Cliente enters 'Yang_Haley@gmail.com' into Email Address for Register (completed)" width="1366"/>
+                <img src="1464b4e9bbbcf3d37e657a9c8705aaadfb32f78fea985ae766c3ba1f988df4f2.png" title=" Cliente clicks on Create an account button" width="1366"/>
+                <img src="8ce721df52eb61870339a9716757b95df5a230e10014604a49e92d33ea1df3b5.png" title=" Cliente clicks on Create an account button (completed)" width="1366"/>
+                <img src="8ce721df52eb61870339a9716757b95df5a230e10014604a49e92d33ea1df3b5.png" title=" Cliente browse to create an account (completed)" width="1366"/>
+                <img src="8ce721df52eb61870339a9716757b95df5a230e10014604a49e92d33ea1df3b5.png" title=" Cliente fill create an account" width="1366"/>
+                <img src="097588df3c2b3059eb40c1e9e065921fcaafda6a4e0d2c1578fd6efd29aa8b8c.png" title=" Cliente clicks on Mr. Option" width="1366"/>
+                <img src="20be7d6e4ee0e0d02099c92f91caf6d1265c6be41cebc0058295c5c8d308901c.png" title=" Cliente clicks on Mr. Option (completed)" width="1366"/>
+                <img src="3ae5312a21aecaf994f15325bb36b262bcf3e7523bc636ebbf4759bd3a0609ab.png" title=" Cliente enters 'Yang' into Customer First Name" width="1366"/>
+                <img src="db58a843d2ab6b112933c96aa25e76edfb66b71bafa5c3eb6d70eff3cb71b50d.png" title=" Cliente enters 'Yang' into Customer First Name (completed)" width="1366"/>
+                <img src="17af0d5b0a57125600eb5ca10669e2a1667c5d29a0f5fae3f0c3f6c7d078ec0b.png" title=" Cliente enters 'Haley' into Customer Last Name" width="1366"/>
+                <img src="b602ef6c0056f7bd178713b573837ea8662a015e52102f516b4fc9965721ad64.png" title=" Cliente enters 'Haley' into Customer Last Name (completed)" width="1366"/>
+                <img src="33caac0a9862cf1200e0b31b86d5578932d8d56584ba06d63df3c033f08592de.png" title=" Cliente enters 'Yang.30082' into Customer Password" width="1366"/>
+                <img src="ad621a59cc63af6707c9a7ae211f87aeafb823574afb0039ae9bcb65c613567d.png" title=" Cliente enters 'Yang.30082' into Customer Password (completed)" width="1366"/>
+                <img src="130219f9eff0fe7cc67e21de2b31e13ff6a7dd0c6586495bd6db16a6b2b12964.png" title=" Cliente selects 19 in Day" width="1366"/>
+                <img src="ee3d1543f166ca45daa10fc80f8c194973900df5a311f7dc3cedfc066ab2cce3.png" title=" Cliente selects 19 in Day (completed)" width="1366"/>
+                <img src="ee3d1543f166ca45daa10fc80f8c194973900df5a311f7dc3cedfc066ab2cce3.png" title=" Cliente selects 4 in Month" width="1366"/>
+                <img src="d8f9059fb26d663c6ae7069f0534ff3cd7b775af2b2e3292bd7a4abcbeba256d.png" title=" Cliente selects 4 in Month (completed)" width="1366"/>
+                <img src="d8f9059fb26d663c6ae7069f0534ff3cd7b775af2b2e3292bd7a4abcbeba256d.png" title=" Cliente selects 1977 in Year" width="1366"/>
+                <img src="37e27da7c475aa40d077b270b694db735dc1d6be27303b1ca9595cc0991b421d.png" title=" Cliente selects 1977 in Year (completed)" width="1366"/>
+                <img src="8152d7e7ac6f98f06631148a5eb5205f6b89d6143c74cbc504c566478ce78637.png" title=" Cliente clicks on Newsletter Option" width="1366"/>
+                <img src="abc67fc98afe4be3cd0d27704faa0170b415beeabeb990f29f5428d2c17aa14d.png" title=" Cliente clicks on Newsletter Option (completed)" width="1366"/>
+                <img src="0a000da5cfe7fab216190233861ab82dde9c057b44caf484e50508056a9f9435.png" title=" Cliente clicks on Offer Option" width="1366"/>
+                <img src="7833f53e0f7ae8ca85f169522e0c7c0bcbd6cea95743bfc56a5c83cf40a6bb2f.png" title=" Cliente clicks on Offer Option (completed)" width="1366"/>
+                <img src="b66051e11d0aff10b16ed41603c412d1542e9a14f3bd245a81c09748fda36f4d.png" title=" Cliente enters 'Bergstrom-Romaguera' into Company" width="1366"/>
+                <img src="e7c1490b4e935defb760274ade91a7202e10d6a48cc06f013809c6b5e888a9fc.png" title=" Cliente enters 'Bergstrom-Romaguera' into Company (completed)" width="1366"/>
+                <img src="a470e90596dde99045c516ea93e3402a12ff1576717d06bae949db7b6c031843.png" title=" Cliente enters '1018 Dario Isle' into First Address" width="1366"/>
+                <img src="eee6d5fbee17c17e43c431904d9965f713189b5d3ffb1aa2b62e015d81e94bc8.png" title=" Cliente enters '1018 Dario Isle' into First Address (completed)" width="1366"/>
+                <img src="2b7614dcf9de0f5ed43ed6037cf498e48062ff2d3eebee14a5a20b857deaf7d2.png" title=" Cliente enters 'Apt. 224' into Secondary Address" width="1366"/>
+                <img src="45d37fc00d131be642a2be1f71bba56e0366d7273a882ccf948c0172c5247c49.png" title=" Cliente enters 'Apt. 224' into Secondary Address (completed)" width="1366"/>
+                <img src="ddf48887197153709aeb371387a8a579fbc550c56328ac5a00a0b2f23340d533.png" title=" Cliente enters 'Lettiebury' into City" width="1366"/>
+                <img src="d6d55d5e1998f741b22841cfa19e71df584eb4d7408a1af689c0e7b7446a8820.png" title=" Cliente enters 'Lettiebury' into City (completed)" width="1366"/>
+                <img src="dbe4538025bcc5e503cd8e878eb01ba9f72d2535da12f65f336fcdc57cfc597b.png" title=" Cliente select Alaska on State" width="1366"/>
+                <img src="2ebcaec23286ae0857e3ce82df4779cbd89cf6f51c23135c2fd445f269f78a45.png" title=" Cliente select Alaska on State (completed)" width="1366"/>
+                <img src="5948fd4ef67a1e8ee884d5a174011e82b6a9d42c6c5c9b7b0e246f80011154d6.png" title=" Cliente enters '30082' into Zip Code" width="1366"/>
+                <img src="7734cde668a4c691bcbbc006fc1cd87565fb91ab6f3c271faec9a52ac11e9590.png" title=" Cliente enters '30082' into Zip Code (completed)" width="1366"/>
+                <img src="ce3b75be938ef3e78b88ceea7db466b56c4c8501f51a9f94b068aec9225fde52.png" title=" Cliente enters 'Neighbourhood Cleta Hills' into Additional Information" width="1366"/>
+                <img src="ffeac03173f772ccac3fc353689e771dd92133c7b82f7a777b6e3617ab4035e8.png" title=" Cliente enters 'Neighbourhood Cleta Hills' into Additional Information (completed)" width="1366"/>
+                <img src="fca524f47aa253cf1a3dd3780e39853f655accf9bf2cf520172edd86dc739cb3.png" title=" Cliente enters '48843' into Home Phone" width="1366"/>
+                <img src="ee0df507207fdb9f1a507d5c7ff536f6872b7d943c5fea0f89e26f501bdec37f.png" title=" Cliente enters '48843' into Home Phone (completed)" width="1366"/>
+                <img src="b0517da6a706708f246bf69e9856ff2477392afab21d55d56fb2e538dab68eeb.png" title=" Cliente enters '5380885' into Mobile Phone" width="1366"/>
+                <img src="e64d99820f6c5977a6f8743bce6479ab3854aabb806171598c84f5a2cbcf18e0.png" title=" Cliente enters '5380885' into Mobile Phone (completed)" width="1366"/>
+                <img src="36a95f6d3f567783337b514ed3af5f0a41538f49adb60847ded7482317661704.png" title=" Cliente clears field Address Alias" width="1366"/>
+                <img src="0f7a84e2ecc4c43516f9f559c6757c7a0ffc3ef94d4041646cfa695f0606a195.png" title=" Cliente clears field Address Alias (completed)" width="1366"/>
+                <img src="0f7a84e2ecc4c43516f9f559c6757c7a0ffc3ef94d4041646cfa695f0606a195.png" title=" Cliente enters 'Hulk II home' into Address Alias" width="1366"/>
+                <img src="0152e7331c729ac2e1dbeaa319075df09f10e08052049353488aed547ae28fec.png" title=" Cliente enters 'Hulk II home' into Address Alias (completed)" width="1366"/>
+                <img src="da98b0720d7ccd750452c6c87611d4277869015ec5d1ef6025f12b9e6e285872.png" title=" Cliente clicks on Register Button" width="1366"/>
+                <img src="b576dba5bbd5f98d9fceff043f982ba8d59695c66241e64f744f2504e4ac3d0a.png" title=" Cliente clicks on Register Button (completed)" width="1366"/>
+                <img src="b576dba5bbd5f98d9fceff043f982ba8d59695c66241e64f744f2504e4ac3d0a.png" title=" Cliente fill create an account (completed)" width="1366"/>
+                <img src="b576dba5bbd5f98d9fceff043f982ba8d59695c66241e64f744f2504e4ac3d0a.png" title=" Cliente sign out account" width="1366"/>
+                <img src="b9f9e5d639f65b827fed0fe028dac2195f0d67eda3470e663b3b864358fc5726.png" title=" Cliente clicks on Sign Out" width="1366"/>
+                <img src="2ee35a502f40b698fe08608284daf22377ef606d986022869e05aee3bde1136f.png" title=" Cliente clicks on Sign Out (completed)" width="1366"/>
+                <img src="2ee35a502f40b698fe08608284daf22377ef606d986022869e05aee3bde1136f.png" title=" Cliente sign out account (completed)" width="1366"/>
+                <img src="2ee35a502f40b698fe08608284daf22377ef606d986022869e05aee3bde1136f.png" title=" When el cliente entra en la seccion Sign in del sitio Web (completed)" width="1366"/>
+                <img src="d7c54655a4a11edb3cbe453bcc14bc77a3967d3eada72e7393043a547cdc6604.png" title=" When el cliente ingresa sus datos personales y clickea el boton Sign in" width="1366"/>
+                <img src="d7c54655a4a11edb3cbe453bcc14bc77a3967d3eada72e7393043a547cdc6604.png" title=" Cliente fill sign in account" width="1366"/>
+                <img src="d7c54655a4a11edb3cbe453bcc14bc77a3967d3eada72e7393043a547cdc6604.png" title=" Cliente enters 'Yang_Haley@gmail.com' into Email Login" width="1366"/>
+                <img src="b620ef1f2ea04dfa9f9f26625094b0786420af10d08da619b3a046c46283de3a.png" title=" Cliente enters 'Yang_Haley@gmail.com' into Email Login (completed)" width="1366"/>
+                <img src="6963e777e3d2e81b130267642e3099688769216a282865cc6eab14879ee7fba4.png" title=" Cliente enters 'Yang.30082' into Password Login" width="1366"/>
+                <img src="78bf2a18076fdbd2c70e2db8d4bf52d14762a0ff591d696c85dfe62e16b18939.png" title=" Cliente enters 'Yang.30082' into Password Login (completed)" width="1366"/>
+                <img src="bcd19bf96a6776a0e9980f5b97ea5cae1286008f747e74ce0c63e4cd5c9aa5a3.png" title=" Cliente clicks on Sign In Button" width="1366"/>
+                <img src="b576dba5bbd5f98d9fceff043f982ba8d59695c66241e64f744f2504e4ac3d0a.png" title=" Cliente clicks on Sign In Button (completed)" width="1366"/>
+                <img src="b576dba5bbd5f98d9fceff043f982ba8d59695c66241e64f744f2504e4ac3d0a.png" title=" Cliente fill sign in account (completed)" width="1366"/>
+                <img src="b576dba5bbd5f98d9fceff043f982ba8d59695c66241e64f744f2504e4ac3d0a.png" title=" When el cliente ingresa sus datos personales y clickea el boton Sign in (completed)" width="1366"/>
+                <img src="b576dba5bbd5f98d9fceff043f982ba8d59695c66241e64f744f2504e4ac3d0a.png" title=" Then debera aparecer la seccion MY ACCOUNT del usuario logueado" width="1366"/>
+                <img src="b576dba5bbd5f98d9fceff043f982ba8d59695c66241e64f744f2504e4ac3d0a.png" title=" Then successful sign in should be (true)" width="1366"/>
+                <img src="b576dba5bbd5f98d9fceff043f982ba8d59695c66241e64f744f2504e4ac3d0a.png" title=" Then debera aparecer la seccion MY ACCOUNT del usuario logueado (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.2.9</span>
+</div>
+</body>
+</html>
